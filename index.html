@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Hubs - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- making site supportable for multiple devices -->
+<style>
+  /*Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+      #primary { width:67%; }
+      #secondary { width:30%; margin-left:3%;}
+  }
+
+  /* Media Queries: Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+
+  /* image proportions */
+  img { max-width: 100%; height: auto; }
+
+  /* font sizes */
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} }
+  @media (min-width:960px) { body {font-size:1.2rem;} }
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
+
+</style>
+
+<!-- back to top button -->
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f44336!important;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  </body>
+
+<!-- Header with Slideshow -->
+
+<style>
+.w3-cyan, .w3-hover-cyan:hover {
+    color: #000!important;
+    background-color: #f44336!important;
+}
+.w3-red, .w3-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
+}
+
+@media (min-width: 1540px){
+  .w3-image{width: 2000px;
+          }
+}
+</style>
+
+<header class="w3-display-container w3-center">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="newimages/app.jpg" alt="Image 1" style="min-width:500px" width="1550" height="600">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Explore the city with our app!</h1>
+        <hr class="w3-opacity">
+        <p>Super simple installment</p>
+        <p><button class="w3-button w3-block w3-cyan w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="newimages/arsticker.jpg" alt="Image 2" style="min-width:500px" width="1550" height="600">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge w3-text-white">Interactive city tours</h1>
+        <hr class="w3-opacity">
+        <p>Choose from different cities</p>
+        <p><button class="w3-button w3-block w3-cyan w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="newimages/hubs.jpg" alt="Image 3" style="min-width:500px" width="1550" height="1200">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Well suited for families</h1>
+        <hr class="w3-opacity">
+        <p>Choose for the special children's tour</p>
+        <p><button class="w3-button w3-block w3-cyan w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">See more <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">See more <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- Pitch -->
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <video class="center" style= "width: 800px;" controls>
+      <source src="newimages/videopitch.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">DOWNLOAD</h2>
+      <p>This ´Download´ will lead you to another page where an app mockup can be tested.</p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="parent.open('https://xd.adobe.com/view/92fbaf37-5481-4c41-b30a-6a80eef672a4-c7a8/')">Go</button>
+    </div>
+  </div>
+</div>
+
+<!-- Explanation short -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small" src="newimages/app2.jpg" alt="App" style="width: 240px; margin-left: 100px;">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-xxxlarge"> <b>Welcome to <i>Culture Hubs</i></b></h1>
+      <h1 style=color:#f44336!important> Start exploring the city in a new way</h1>
+      <p> <i>Culture Hubs</i> is a product service system which will guide you through various cities. By following a route in the app you will enter a story about a specific city-relevant topic. Along the route you will visit hubs and AR stickers which will bring the story even more to life by using Augmented Reality, movement, lights and more.</p>
+      <p>Also, for the younger ones a tour with <i>Culture Hubs</i> will be an unforgettable experience. Characters their own age will guide them through the city by talking about their lives and playing little games in between.</p>
+      <p>Wanting to give your city a boost? Wanting to attract more tourists and customers? Well, <i>Culture Hubs</i> may be just the thing you need. Take a look at the diverse topics on our site for more information. <b>Be smart, give your city a boost, invest in <i>Culture Hubs</i>.</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- images -->
+<style>
+
+.museumlaan {
+  display: none;
+}
+
+@media (min-width: 1540px){
+  .museumlaan{display: inline;
+          }
+}
+</style>
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <img src="newimages/app5.jpg" style="width: 166px; margin-left: 40px;">
+    <img src="newimages/oudemarkt.jpg" style="width: 450px;">
+    <img src="newimages/scanning.jpg" style="width: 164px;">
+    <img src="newimages/vanheek.jpg" style="width: 450px;">
+    <img src="newimages/app6.jpg" style="width: 166px;">
+    <img src="newimages/museumlaan.jpg" style="width: 420px;" class="museumlaan">
+  </div>
+</div>
+
+<!-- Unity filmpje -->
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <video class="center" style= "width: 800px;" controls>
+      <source src="newimages/videounity.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-white w3-center">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <p><i>Culture Hubs</i> contains the following aspects.</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-book w3-text-cyan w3-jumbo"></i>
+      <p>Informative</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-tree w3-text-cyan w3-jumbo"></i>
+      <p>Outside</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-home w3-text-cyan w3-jumbo"></i>
+      <p>Diverse cities</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-compass w3-text-cyan w3-jumbo"></i>
+      <p>Various routes</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-users w3-text-cyan w3-jumbo"></i>
+      <p>Family friendly</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-language w3-text-cyan w3-jumbo"></i>
+      <p>Various languages</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-map-signs w3-text-cyan w3-jumbo"></i>
+      <p>Navigation in app</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-mobile w3-text-cyan w3-jumbo"></i>
+      <p>Usable for Android & IOS</p>
+    </div>
+  </div>
+</div>
+
+<!-- navigation bar -->
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f44336!important;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar for tablet/mobile phone */
+  @media (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+    .navbar a {font-size: 17px;}
+    .dropdown .dropbtn {font-size: 17px;}
+    .dropdown-content {max-height:400px;
+          overflow:auto;}
+  }
+  @media (min-width: 767px) {
+    .logo {
+      display: block;
+    }
+    .navbar a {font-size: 20px;}
+    .dropdown .dropbtn {font-size: 20px;}
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img class="logo" src="newimages/newlogo.jpg">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Design
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page2.html">Design Explanation & Rationale</a>
+      <a href="page17.html">Design Rationale - Hub</a>
+      <a href="page18.html">Design Rationale - App</a>
+      <a href="page15.html">Market Introduction Strategy</a>
+      <a href="page16.html">Further Steps & Evaluation</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Tools
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page3.html">Infographics & Product Communication</a>
+      <a href="page4.html">Instruction Design</a>
+      <a href="page5.html">3D Visualisation</a>
+      <a href="page6.html">Website Development</a>
+      <a href="page7.html">Expert Meeting</a>
+      <a href="page8.html">Virtual Reality & Advanced Interaction</a>
+      <a href="page9.html">Collaborative Design Challenges</a>
+      <a href="page10.html">Programming from Scratch</a>
+      <a href="page11.html">Maintenance</a>
+      <a href="page12.html">User Interface Design & Simulation</a>
+      <a href="page13.html">End of Life for Circular Economy</a>
+    </div>
+  </div>
+  <a href="page14.html">About</a>
+</div>
+
+</body>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+      <p class="w3-medium">Project Virtual Product Development | University of Twente | Group 16 | June 2021 </p>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

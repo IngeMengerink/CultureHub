@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Hubs - Website Development</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- making site supportable for multiple devices -->
+<style>
+  /*Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+      #primary { width:67%; }
+      #secondary { width:30%; margin-left:3%;}
+  }
+
+  /* Media Queries: Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+
+  /* image proportions */
+  img { max-width: 100%; height: auto; }
+
+  /* font sizes */
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} }
+  @media (min-width:960px) { body {font-size:1.2rem;} }
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
+
+</style>
+
+<!-- back to top button -->
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f44336!important;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  </body>
+
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+      <h1 class="w3-xxxlarge" style= "text-align: left; margin-left: 20px; margin-right: 150px;"> <b>Website Development</b></h1>
+      <h1 style="color:#f44336!important; text-align: left; margin-left: 20px; margin-right: 150px;"> Building a website using html code</h1>
+      <p style= "text-align: left; margin-left: 20px; margin-right: 150px;">The tool website development was used to create this website. During the tool two different approaches for building a website were offered: coding by html/CSS/javascript and working with wordpress. It was chosen to first start coding with html and to switch to wordpress if it would turn out to be too difficult using html. Switching, however, was not needed, because after quite some struggling in the beginning it did turn out to be quite doable.</p>
+      <p style= "text-align: left; margin-left: 20px; margin-right: 150px;">As said, this site is coded by using mostly html code and a little bit of CSS and javascript. The style attributes are mostly included in the html code instead of in the CSS code, because the CSS file started to become quite big and unorganised. When implementing the style attributes in the html code it was easier to keep a clear structure.</p>
+      <p style= "text-align: left; margin-left: 20px; color: white;">The most difficult part on this website, in terms of programming, is the diagram under ‘’Design Explanation & Rationale’’. Here, a lot of different pieces of code are combined to come to the end result. blablabla this is just random text to make sure that there is no ugly white part on the bottum and apparantly is it stil not enough, so I need to type a little bit more bullshit over here
+</div>
+
+<!-- navigation bar -->
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f44336!important;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar for tablet/mobile phone */
+  @media (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+    .navbar a {font-size: 17px;}
+    .dropdown .dropbtn {font-size: 17px;}
+    .dropdown-content {max-height:400px;
+          overflow:auto;}
+  }
+  @media (min-width: 767px) {
+    .logo {
+      display: block;
+    }
+    .navbar a {font-size: 20px;}
+    .dropdown .dropbtn {font-size: 20px;}
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img class="logo" src="newimages/newlogo.jpg">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Design
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page2.html">Design Explanation & Rationale</a>
+      <a href="page17.html">Design Rationale - Hub</a>
+      <a href="page18.html">Design Rationale - App</a>
+      <a href="page15.html">Market Introduction Strategy</a>
+      <a href="page16.html">Further Steps & Evaluation</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Tools
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page3.html">Infographics & Product Communication</a>
+      <a href="page4.html">Instruction Design</a>
+      <a href="page5.html">3D Visualisation</a>
+      <a href="page6.html">Website Development</a>
+      <a href="page7.html">Expert Meeting</a>
+      <a href="page8.html">Virtual Reality & Advanced Interaction</a>
+      <a href="page9.html">Collaborative Design Challenges</a>
+      <a href="page10.html">Programming from Scratch</a>
+      <a href="page11.html">Maintenance</a>
+      <a href="page12.html">User Interface Design & Simulation</a>
+      <a href="page13.html">End of Life for Circular Economy</a>
+    </div>
+  </div>
+  <a href="page14.html">About</a>
+</div>
+
+</body>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+      <p class="w3-medium">Project Virtual Product Development | University of Twente | Group 16 | June 2021 </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Hubs - Expert Meeting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- making site supportable for multiple devices -->
+<style>
+  /*Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+      #primary { width:67%; }
+      #secondary { width:30%; margin-left:3%;}
+  }
+
+  /* Media Queries: Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+
+  /* image proportions */
+  img { max-width: 100%; height: auto; }
+
+  /* font sizes */
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} }
+  @media (min-width:960px) { body {font-size:1.2rem;} }
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
+
+</style>
+
+<!-- back to top button -->
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f44336!important;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  </body>
+
+
+  <!-- The App Section -->
+  <div class="w3-padding-64 w3-white">
+    <div class="w3-row-padding">
+      <div class="w3-col l7 m6">
+        <h1 class="w3-xxxlarge" style= "text-align: left; margin-left: 20px; margin-right: 150px;"> <b>Expert Meeting</b></h1>
+        <h1 style="color:#f44336!important; text-align: left; margin-left: 20px; margin-right: 150px;"> Asking project specific questions</h1>
+        <p style= "text-align: left; margin-left: 20px;">This tool was useful especially in the beginning of the project. The project coordinators helped the group with how to determine requirements for outdoor use of the hub. The group was struggling with taking all possible circumstances into consideration. Examples of circumstances are weather: rain/water, snow, sun, wind, but also vandalism and the right use. For a lot of the circumstances a scenario was made. Most of them were a worst case scenario and some were right use scenarios. The right use was important to not forget, otherwise the product won’t be designed for its purpose and won’t be user friendly. The worst case scenarios were meant to prevent misuse and big unneeded expenses. Later the tool maintenance came in handy for this topic.
+        </p>
+        <p style= "text-align: left; margin-left: 20px;">Furthermore on advice of a project coordinator, an analysis of already existing street furniture was started. We looked at street furniture at the campus in the city and a bit online how it was designed for outdoor use. How is the material protected, how is the product locked/stuck to the ground, how are connections hidden and how is rain guided away? With such questions in mind, we took photos of these smart designs which gave answers to these questions.
+        The scenarios in combination with the analysis from other street furniture led to the initial requirements list and inspiration for our design. The design should nudge all users to a desired use. We became our own expert in the field of street furniture.
+      </p>
+        </div>
+      <div class="w3-col l5 m6">
+        <img src="newimages/streetfurniture.jpg" class="w3-image w3-right w3-hide-small" style=" width: 600px; height: 350px; margin-top: 170px;">
+  </div>
+  </div>
+  </div>
+
+<!-- navigation bar -->
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f44336!important;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar for tablet/mobile phone */
+  @media (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+    .navbar a {font-size: 17px;}
+    .dropdown .dropbtn {font-size: 17px;}
+    .dropdown-content {max-height:400px;
+          overflow:auto;}
+  }
+  @media (min-width: 767px) {
+    .logo {
+      display: block;
+    }
+    .navbar a {font-size: 20px;}
+    .dropdown .dropbtn {font-size: 20px;}
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img class="logo" src="newimages/newlogo.jpg">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Design
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page2.html">Design Explanation & Rationale</a>
+      <a href="page17.html">Design Rationale - Hub</a>
+      <a href="page18.html">Design Rationale - App</a>
+      <a href="page15.html">Market Introduction Strategy</a>
+      <a href="page16.html">Further Steps & Evaluation</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Tools
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page3.html">Infographics & Product Communication</a>
+      <a href="page4.html">Instruction Design</a>
+      <a href="page5.html">3D Visualisation</a>
+      <a href="page6.html">Website Development</a>
+      <a href="page7.html">Expert Meeting</a>
+      <a href="page8.html">Virtual Reality & Advanced Interaction</a>
+      <a href="page9.html">Collaborative Design Challenges</a>
+      <a href="page10.html">Programming from Scratch</a>
+      <a href="page11.html">Maintenance</a>
+      <a href="page12.html">User Interface Design & Simulation</a>
+      <a href="page13.html">End of Life for Circular Economy</a>
+    </div>
+  </div>
+  <a href="page14.html">About</a>
+</div>
+
+</body>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+      <p class="w3-medium">Project Virtual Product Development | University of Twente | Group 16 | June 2021 </p>
+</footer>
+
+</body>
+</html>
