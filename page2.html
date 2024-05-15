@@ -1,7 +1,1238 @@
-<div id="page2">
-  <h2 style="text-align:center">Concept</h2>
-  <p style="text-align:center">On this page you can see af first impression of the project I am currently working on.
-  My group wants to design an interactive city tour consisting of hubs with display cabinets spreaded over the city in combination with a mobile app.
-  When following the route given by the app users will arive at certain hubs which can be activated with the app. The image below gives an indication
-  of a possible hub.</p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Hubs - Design Explanation & Rationale</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- making site supportable for multiple devices -->
+<style>
+  /*Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+      #primary { width:67%; }
+      #secondary { width:30%; margin-left:3%;}
+  }
+
+  /* Media Queries: Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+
+  /* image proportions */
+  img { max-width: 100%; height: auto; }
+
+  /* font sizes */
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} }
+  @media (min-width:960px) { body {font-size:1.2rem;} }
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
+
+</style>
+
+<!-- back to top button -->
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f44336!important;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  </body>
+
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-xxxlarge"> <b>Design Explanation & Rationale</b></h1>
+      <h1 style=color:#f44336!important> The story behind the design</h1>
+      <p> A product service system (PSS) normally consists of multiple parts. Various components work together to ensure the stakeholders of a working end product. Especially when looking at the <i>Culture Hubs</i> PSS a lot of different elements and parties are involved.</p>
+      <p> The diagram below shows all components and stakeholders involved to make <i>Culture Hubs</i> function properly. By hovering over the elements or words between certain elements, an explanation will appear. In these explanations the elements and words will be further explained and underpinned with the design choices made during the process. Choices were made based on our list of requirements, which can be found <font color= "#f44336"><b><u><a href="resources/listofrequirements.pdf"target="_blank">here</a></u></b></font>.</p>
+      <p>The hub and app both have their own website page completely focussed on their design rationales, because these elements are the most important in our product service combination. Explaining all rationale behind these aspects on this page would simply be too much. Click <font color= "#f44336"><b><u><a href="page17.html"target="_blank">here</a></u></b></font> to go the the design rationale behind the hub and click <font color= "#f44336"><b><u><a href="page18.html"target="_blank">here</a></u></b></font> to go to the page about the app.
+      </p>
+      <p style="font-size:14px"> The example worked out in the diagram will mainly focus on a worked out tour of the textile industry in the city centre of Enschede.</p>
+      </div>
+      <div class="w3-col l4 m6">
+        <img src="newimages/sketch.jpg" class="w3-image w3-right w3-hide-small" width="1000" height="2000" style="margin-top: 100px; margin-left: 40px;">
+      </div>
+  </div>
 </div>
+
+<!-- Infographic -->
+<style>
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  height: 1000px;
+  display: block;
+  margin-left: 230px;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  width: 70%;
+  border: none;
+}
+
+div.photo-container {
+  position: absolute;
+  top: 45px;
+  left: 710px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 25em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+div.photo-container a:hover span {
+    visibility: visible;
+}
+div.photo-container-2 {
+  position: absolute;
+  top: 200px;
+  left: 275px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-2 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-2 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-2 a:hover span {
+    visibility: visible;
+}
+div.photo-container-3 {
+  position: absolute;
+  top: 310px;
+  left: 722px;
+  height: 100px;
+  width: 80px;
+}
+
+div.photo-container-3 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-3 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 4em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 25em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-3 a:hover span {
+    visibility: visible;
+}
+div.photo-container-4 {
+  position: absolute;
+  top: 200px;
+  left: 1115px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-4 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-4 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-4 a:hover span {
+    visibility: visible;
+}
+div.photo-container-5 {
+  position: absolute;
+  top: 460px;
+  left: 265px;
+  height: 100px;
+  width: 120px;
+}
+
+div.photo-container-5 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-5 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 6em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-5 a:hover span {
+    visibility: visible;
+}
+div.photo-container-6 {
+  position: absolute;
+  top: 575px;
+  left: 710px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-6 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-6 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 25em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-6 a:hover span {
+    visibility: visible;
+}
+div.photo-container-7 {
+  position: absolute;
+  top: 425px;
+  left: 1115px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-7 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-7 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 5em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-7 a:hover span {
+    visibility: visible;
+}
+div.photo-container-8 {
+  position: absolute;
+  top: 850px;
+  left: 710px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-8 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-8 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5em;
+    top: -6em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-8 a:hover span {
+    visibility: visible;
+}
+
+
+div.photo-container-9 {
+  position: absolute;
+  top: 135px;
+  left: 500px;
+  height: 50px;
+  width: 50px;
+}
+
+div.photo-container-9 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-9 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-9 a:hover span {
+    visibility: visible;
+}
+div.photo-container-10 {
+  position: absolute;
+  top: 135px;
+  left: 957px;
+  height: 110px;
+  width: 110px;
+}
+
+div.photo-container-10 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-10 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-10 a:hover span {
+    visibility: visible;
+}
+div.photo-container-11 {
+  position: absolute;
+  top: 200px;
+  left: 760px;
+  height: 75px;
+  width: 75px;
+}
+
+div.photo-container-11 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-11 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-11 a:hover span {
+    visibility: visible;
+}
+div.photo-container-12 {
+  position: absolute;
+  top: 270px;
+  left: 550px;
+  height: 50px;
+  width: 50px;
+}
+
+div.photo-container-12 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-12 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-12 a:hover span {
+    visibility: visible;
+}
+div.photo-container-13 {
+  position: absolute;
+  top: 273px;
+  left: 900px;
+  height: 60px;
+  width: 60px;
+}
+
+div.photo-container-13 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-13 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-13 a:hover span {
+    visibility: visible;
+}
+div.photo-container-14 {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+  height: 60px;
+  width: 60px;
+}
+
+div.photo-container-14 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-14 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-14 a:hover span {
+    visibility: visible;
+}
+div.photo-container-15 {
+  position: absolute;
+  top: 400px;
+  left: 540px;
+  height: 60px;
+  width: 60px;
+}
+
+div.photo-container-15 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-15 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-15 a:hover span {
+    visibility: visible;
+}
+div.photo-container-16 {
+  position: absolute;
+  top: 465px;
+  left: 760px;
+  height: 75px;
+  width: 75px;
+}
+
+div.photo-container-16 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-16 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-16 a:hover span {
+    visibility: visible;
+}
+div.photo-container-17 {
+  position: absolute;
+  top: 400px;
+  left: 900px;
+  height: 110px;
+  width: 110px;
+}
+
+div.photo-container-17 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-17 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-17 a:hover span {
+    visibility: visible;
+}
+div.photo-container-18 {
+  position: absolute;
+  top: 350px;
+  left: 1180px;
+  height: 70px;
+  width: 70px;
+}
+
+div.photo-container-18 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-18 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-18 a:hover span {
+    visibility: visible;
+}
+div.photo-container-19 {
+  position: absolute;
+  top: 575px;
+  left: 489px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-19 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-19 a span {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-19 a:hover span {
+    visibility: visible;
+}
+div.photo-container-20 {
+  position: absolute;
+  top: 540px;
+  left: 975px;
+  height: 80px;
+  width: 80px;
+}
+
+div.photo-container-20 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-20 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-20 a:hover span {
+    visibility: visible;
+}
+div.photo-container-21 {
+  position: absolute;
+  top: 700px;
+  left: 435px;
+  height: 60px;
+  width: 60px;
+}
+
+div.photo-container-21 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-21 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-21 a:hover span {
+    visibility: visible;
+}
+div.photo-container-22 {
+  position: absolute;
+  top: 750px;
+  left: 765px;
+  height: 100px;
+  width: 100px;
+}
+
+div.photo-container-22 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-22 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 2em;
+    top: 0em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-22 a:hover span {
+    visibility: visible;
+}
+div.photo-container-23 {
+  position: absolute;
+  top: 1000px;
+  left: 700px;
+  height: 110px;
+  width: 110px;
+}
+
+div.photo-container-23 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    font-weight: normal;
+}
+
+div.photo-container-23 a span {
+    visibility: hidden;
+    position: absolute;
+    left: 2em;
+    top: -9em;
+    background: #f1f1f1;
+    width: 17em;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    font-size: 0.8em;
+    padding: 0.3em;
+    cursor: default;
+    line-height: 1.4;
+}
+
+div.photo-container-23 a:hover span {
+    visibility: visible;
+}
+  @media (min-width: 1540px){
+    .image1{margin-left: 238px;
+            width: 55%;}
+  }
+}
+</style>
+
+  <div class="parent">
+  <img class="image1" src="newimages/infographic.jpg" />
+  <div class="photo-container">
+    <a href="resources/storytextileindustry.pdf" target="_blank">
+       <img src="newimages/AR.jpg" alt="AR Sticker" />
+       <span>The AR stickers bring, for example, the historical city to the present day. Between the hubs multiple AR points are available which can be scanned in the app. Augmented reality based pictures will be placed over the already existing city view. By seeing the things which will be explained within the story, users will be able to understand it better. Next to that, the tour will become more interactive, because you can use the camera of your phone to look around. Example places of these AR stickers can be looked up <font color= "#f44336"><b><u>here</u></b></font>, in the story.
+       </span>
+     </a>
+   </div>
+  <div class="photo-container-2">
+      <a href="resources/resultssurvey.pdf"target="_blank">
+        <img src="newimages/user.jpg" alt="User" />
+        <span>The target group consists mainly of tourists who want to learn more about a certain city. In the worked out example our focus was on families with children (6 - 12 years), because we would like to create a family activity where all family members would learn on their own level of interest and understanding. From a conducted survey, it became clear that we, indeed, target the right group. People were very willing to do this activity with their (grand)children. Click <font color= "#f44336"><b><u>here</u></b></font> for the survey results.
+
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-3">
+        <a href="https://xd.adobe.com/view/92fbaf37-5481-4c41-b30a-6a80eef672a4-c7a8/" target="_blank">
+          <img src="newimages/appicon.jpg" alt="App" />
+          <span>The app is the connecting element between the story, AR stickers and hubs. Within the mobile app the user can buy tokens and start a tour. Therefore, the application can be seen as the main interface of the PSS. The pictures below show some screenshots from within the app.
+            <font color= "#f1f1f1">The app is the connecting element between the </font>
+            <img src="newimages/app2.jpg" style="width:120px;height:275px;"/>
+            <img src="newimages/app3.jpg" style="width:120px;height:275px;"/>
+            <img src="newimages/app4.jpg" style="width:120px;height:275px;"/>
+            <video width="380" height="285" controls>
+              <source src="newimages/explainer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <font color= "#f1f1f1">The app is the connecting element between the </font>
+            Within the mock-up it is possible to listen to some short fragments from the story. Click <font color= "#f44336"><b><u>here</u></b></font> to try the mock-up yourself.
+          </span>
+        </a>
+      </div>
+  <div class="photo-container-4">
+        <a href="resources/storytextileindustry.pdf" target="_blank">
+          <img src="newimages/story.jpg" alt="Story" />
+          <span> The story is of great importance for the interactive city tour. The information told via the AR stickers, hubs and app should teach the users about a certain topic. Of course not all users are of the same age and have the same interest. Therefore, various stories will be available. For example, children will have their own story to follow, told by a child their age. Click <font color= "#f44336"><b><u>here</u></b></font> to see an example story with both an adult and a child version.
+          </span>
+        </a>
+      </div>
+  <div class="photo-container-5">
+        <a href="#">
+          <img src="newimages/company.jpg" alt="Company" />
+          <span>The company is the owner of the PSS. Next to the design of the various elements (app, AR stickers, hubs and stories) the company is responsible for the biggest maintenance part. The user will pay the company to make use of their system and a small part of this income will go to the client, who invested in the PSS.
+          </span>
+        </a>
+      </div>
+  <div class="photo-container-6">
+        <a href="page17.html">
+          <img src="newimages/hub.jpg" alt="Hub" />
+          <span>The hubs are the main object of the system. In these hubs users can follow the story with the additional value of interactive objects in display cabinets. For instance, an interactive map can be placed inside a hub where the user can change the map using the app <i>(see story)</i>. For the hub the most design choices had to be made, so it would be too much to tell on this spot. Therefore, this information can be found <font color= "#f44336"><b><u>here</u></b></font>.
+            <video class="center" style= "width: 380px; height: 284px;" controls>
+              <source src="newimages/videounity.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </span>
+        </a>
+      </div>
+  <div class="photo-container-7">
+      <a href="#">
+        <img src="newimages/museum.jpg" alt="Museum" />
+        <span>When looking at a story about the textile industry in Enschede the local museum could help with writing the story and choosing the attributes which can be displayed in the hub. Of course this could also be another institution when a different route needs to be made. For instance, for a tour focused on the soccer club FC Twente in Enschede the club itself can help with writing the tour and going after the right attributes to show in the hubs.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-8">
+      <a href="#">
+        <img src="newimages/investor.jpg" alt="Investor" />
+        <span>The investor is the institution or business that is interested in having these hubs around the city. This can be the museum, in the example case, but it is also possible to be a festival, a municipality of cultural society, like an orchestra. The investor will hire the hubs from the company and will get back a small amount of the money paid by the user. Furthermore, the investor is responsible for the small maintenance of the hub.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-9">
+      <a href="#">
+        <img src="newimages/using.jpg" alt="Using" />
+        <span>The users look at the AR stickers via the app. With their mobile phones they can, after scanning, walk around and see how a part of the city looked during a certain time period.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-10">
+      <a href="#">
+        <img src="newimages/contributing.jpg" alt="Contributing" />
+        <span>The AR stickers contribute to the story, because the told information comes to life. It is also possible, for the child version of the textile story, to place the character (Anna) in the sticker. She then will pop up on your phone after scanning and walk with you when explaining about the city.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-11">
+      <a href="#">
+        <img src="newimages/activate.jpg" alt="Activate" />
+        <span>The AR stickers can be activated using the app. By scanning the sticker with your camera the augmented reality will be integrated into your screen.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-12">
+      <a href="#">
+        <img src="newimages/using.jpg" alt="Using" />
+        <span>The user uses the app to follow the tour and activate AR stickers and hubs. Within the app the user can make an account and from there on buy and walk tours. Every tour can be walked with a maximum of 4 devices. This means that 3 other devices can be coupled to the main device with the app. In this case families can follow the tour each with their own audio, improving user satisfaction.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-13">
+      <a href="#">
+        <img src="newimages/telling.jpg" alt="Telling" />
+        <span>The story will be told via the app using the speaker of a mobile phone. The story can be put on pause at the AR sticker locations, but not at the hubs. This is due to the fact that in the hubs interaction in the form of light and movement is implemented. To make sure that all devices and the hub work nicely together the story cannot be put on pause at these places. At the AR stickers the users will all use their own device and listen in their own tempo, so here the story can be put on pause.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-14">
+      <a href="page15.html" target="_blank">
+        <img src="newimages/paying.jpg" alt="Paying" />
+        <span>The user pays, via the app, the company for following a tour. A small amount of the money will be distributed to the investor. The user can choose from various tour packages in the app. For instance, he/she can only buy a tour, but it is also possible to buy a combi-ticket for the tour and the local museum (in this example about the textile industry). After payment the user can choose one week in which he/she can walk the tour as often as wanted. For more information about the pricing and marketing strategy, click <font color= "#f44336"><b><u>here</u></b></font>.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-15">
+      <a href="#">
+        <img src="newimages/visiting.jpg" alt="Visiting" />
+        <span>The user visits various hubs during the tour. In these hubs interaction with the objects in the display cabinets takes place. There are also some benches to sit on when listening to the story.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-16">
+      <a href="resources/qrandrfid.pdf" target="_blank">
+        <img src="newimages/activate.jpg" alt="Activate" />
+        <span>The hubs can be activated only by the main device when using the app. The main device is able to scan the QR-code located on the screen inside the hub. For information about the choice for a QR code can be found <font color= "#f44336"><b><u>here</u></b></font>. After scanning the interaction in the hub will start. When objects in the hubs can be controlled by the user, this can only be done by the main device to prevent multiple devices from trying to operate the hub at the same time.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-17">
+      <a href="#">
+        <img src="newimages/contributing.jpg" alt="Contributing" />
+        <span>The hub contributes to the story by showing objects relevant to the told information. An addition to this is that some objects can move or give light. In this way the story will become more alive and especially for children this will grab their attention.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-18">
+      <a href="#">
+        <img src="newimages/writing.jpg" alt="Writing" />
+        <span>An institution (in this example a museum) can help with writing the story which is told during the tour. Probably the institution knows a lot about the tour's subject, so it would be a good idea to make use of their knowledge.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-19">
+      <a href="#">
+        <img src="newimages/bigmaintenance.jpg" alt="Big Maintenance" />
+        <span>The company will do the big maintenance of the hub, such as repairing broken parts or installing and removing the hub. The hub will consist of mostly standard parts, so broken parts can be easily replaced. For example, all modules of the hub have standard sizes, so the amount of parts will be as low as possible.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-20">
+      <a href="#">
+        <img src="newimages/artifacts.jpg" alt="Artifacts" />
+        <span>The institution (in the example a museum) can help with the placement of the artifacts in the hub. The objects should match with the story and it should be possible to change the artifacts every now and then. To make sure that only authorized people can open the cabinets a smart lock system is included where you need a special app with code to open the cabinets. This system is simlar to the package-return system at supermarkets.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-21">
+      <a href="#">
+        <img src="newimages/client.jpg" alt="Client" />
+        <span>The investor is the client of the company. This organisation, association or institution is interested in an interactive city tour with hubs and AR stickers. The investor hires the hubs from the company. In return the investor can, for example, make advertisements for themselves or, in the case of a museum, expand in the form of a little outside museum.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-22">
+      <a href="#">
+        <img src="newimages/smallmaintenance.jpg" alt="Small Maintenance" />
+        <span>The investor is responsible for the small maintenance tasks. These are things, cleaning the hub and changing the artifacts (if the investor is, for instance, a museum). The company is also willing to do the small maintenance, but in that case the investor will need to pay a little bit extra for hiring the hubs.
+        </span>
+      </a>
+    </div>
+  <div class="photo-container-23">
+      <a href="#">
+        <img src="newimages/collaboration.jpg" alt="Collaboration" />
+        <span>The company and the institution (in this example a museum) are collaborating a lot. They decide together about the story and the artifacts in the hubs. If the institution is also the investor both parties also discuss the amount of hubs and AR stickers and their specific locations.
+        </span>
+      </a>
+    </div>
+</div>
+
+<!-- navigation bar -->
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+    float: left;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f44336!important;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar for tablet/mobile phone */
+  @media (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+    .navbar a {font-size: 17px;}
+    .dropdown .dropbtn {font-size: 17px;}
+    .dropdown-content {max-height:400px;
+          overflow:auto;}
+  }
+  @media (min-width: 767px) {
+    .logo {
+      display: block;
+    }
+    .navbar a {font-size: 20px;}
+    .dropdown .dropbtn {font-size: 20px;}
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img class="logo" src="newimages/newlogo.jpg">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Design
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page2.html">Design Explanation & Rationale</a>
+      <a href="page17.html">Design Rationale - Hub</a>
+      <a href="page18.html">Design Rationale - App</a>
+      <a href="page15.html">Market Introduction Strategy</a>
+      <a href="page16.html">Further Steps & Evaluation</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Tools
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="page3.html">Infographics & Product Communication</a>
+      <a href="page4.html">Instruction Design</a>
+      <a href="page5.html">3D Visualisation</a>
+      <a href="page6.html">Website Development</a>
+      <a href="page7.html">Expert Meeting</a>
+      <a href="page8.html">Virtual Reality & Advanced Interaction</a>
+      <a href="page9.html">Collaborative Design Challenges</a>
+      <a href="page10.html">Programming from Scratch</a>
+      <a href="page11.html">Maintenance</a>
+      <a href="page12.html">User Interface Design & Simulation</a>
+      <a href="page13.html">End of Life for Circular Economy</a>
+    </div>
+  </div>
+  <a href="page14.html">About</a>
+</div>
+
+</body>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+      <p class="w3-medium">Project Virtual Product Development | University of Twente | Group 16 | June 2021 </p>
+</footer>
+
+</body>
+</html>
